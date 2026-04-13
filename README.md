@@ -74,7 +74,7 @@ kubectl get ingress
 ### Option 1: Port Forward (Recommended)
 
 ```bash
-kubectl port-forward service/nginx-service 8080:80
+kubectl port-forward --address 0.0.0.0 service/nginx-service 8080:80
 ```
 
 Access in browser:
